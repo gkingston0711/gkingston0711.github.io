@@ -1,0 +1,74 @@
+/* Will contain all CSS  */
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+header {
+  background-color: rgb(16, 210, 210);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-left: 3%;
+  float: left;
+  padding: 10px 0px;
+}
+
+img {
+  height: 50px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 28px;
+
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: black;
+}
+nav a::before {
+  content: '';
+  display: block;
+  background-color: #444;
+  height: 5px;
+  width: 0%;
+  position: absolute;
+  top: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
