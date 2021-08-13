@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: rgb(16, 210, 210);
+  background-color: rgb(101, 185, 199);
 }
 
 header::after {
@@ -21,12 +21,9 @@ header::after {
 }
 
 .logo {
-  margin-left: 3%;
+  margin-left: 1%;
   float: left;
   padding: 10px 0px;
-}
-
-img {
   height: 50px;
 }
 
@@ -42,9 +39,8 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 70px;
+  margin-left: 50px;
   padding-top: 28px;
-
   position: relative;
 }
 
@@ -71,4 +67,41 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.flex-container {
+  /* width: 100%; 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px; */
+  display: flex;
+  flex: 25%;
+  padding: 0 4px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.flex-container img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.flex-container .item {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
