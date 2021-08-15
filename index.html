@@ -7,34 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src='01-Portfolio.js'></script>
 </head>
-<body>
+<body onload='pageLoad()'>
+   
     <header>
-        <div class="container">
+        <div class="container" id='divNavbar'>
             <img src="photos/Nav_Logo.png" alt="Logo" class="logo"> 
                 <nav>
                     <ul>
                         <li>
-                            <a class ="nav-link" href = "index.html">About Me</a>
+                            <a class ="nav-link" href = "javascript:showSection(1)">About Me</a>
                         </li>
                         <li>
-                            <a class ="nav-link" href = "index.html">Previous Work</a>
+                            <a class ="nav-link" href = "javascript:showSection(2)">Previous Work</a>
                         </li>
                         <li>
-                            <a class ="nav-link" href = "index.html">Projects</a>
+                            <a class ="nav-link" href = "javascript:showSection(3)">Projects</a>
                         </li>
                         <li>
-                            <a class ="nav-link" href = "index.html">Contact Me</a>
+                            <a class ="nav-link" href = "javascript:showSection(4)">Contact Me</a>
                         </li>
                         <li>
-                            <a class ="nav-link" href = "index.html">Photographs</a>
+                            <a class ="nav-link" href = "javascript:showSection(0)">Home</a>
                         </li>
                     </ul>
                 </nav>
         </div>
     </header>
+    <div id='divPrevWork'>
+        <h1>Previous works:</h1>
+    </div>
+    <div id='divProjects'>
+        <h1>My Projects:</h1>
+    </div>
+    <div id = 'divAboutMe'>
+        <h1>About Me!</h1>
+    </div>
 
-    <div class = "rows">
+    <div class = "rows" id='divHome'>
 
         <div class="flex-container ">
 
@@ -149,6 +161,14 @@
         </div>
     </div>
    
-    
+    <div id='divContactMe'>
+        <h1>Contact Me:</h1>
+        <form onSubmit='return contactMe(this)'>
+            <p><input type='text' id='yourName' required minlength="2"/></p>
+            <p><input type='email' id='yourEmail' required/></p>
+            <p><button>Submit</button></p>
+        </form>
+    </div>
 </body>
+
 </html>

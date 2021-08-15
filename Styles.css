@@ -105,3 +105,13 @@ nav a:hover::before {
     max-width: 100%;
   }
 }
+#divContactMe {
+  margin: 20px;
+  padding: 10px;
+  background-color: aqua;
+}
+#divAboutMe {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(101, 185, 199);
+}
