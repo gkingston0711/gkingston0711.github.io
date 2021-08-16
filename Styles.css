@@ -2,11 +2,11 @@
 
 body {
   margin: 0;
-  background-color: white;
+  background-color: rgb(211, 252, 255);
 }
 
 header {
-  background-color: rgb(101, 185, 199);
+  background-color: rgb(211, 252, 255);
 }
 
 header::after {
@@ -44,6 +44,12 @@ nav li {
   position: relative;
 }
 
+@media screen and (max-width: 812px) {
+  .logo {
+    display: none;
+  }
+}
+
 nav a {
   color: black;
   text-decoration: none;
@@ -76,10 +82,6 @@ nav a:hover::before {
 
 /* Create four equal columns that sits next to each other */
 .flex-container {
-  /* width: 100%; 
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px; */
   display: flex;
   flex: 25%;
   padding: 0 4px;
@@ -105,13 +107,118 @@ nav a:hover::before {
     max-width: 100%;
   }
 }
+
+@media screen and (min-width: 601px) and (max-width: 788px) {
+  .flex-container {
+    flex: 48%;
+    max-width: 100%;
+  }
+}
 #divContactMe {
   margin: 20px;
   padding: 10px;
   background-color: aqua;
 }
-#divAboutMe {
-  margin: 20px;
-  padding: 10px;
-  background-color: rgb(101, 185, 199);
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.contentAboutMe {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  margin-top: 3.5%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1.75fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box2 {
+  grid-column: 1 / span 2;
+}
+
+.box2 p {
+  font-size: medium;
+}
+
+.box1 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.wrapper .item-1 {
+  height: 98%;
+  width: 90%;
+  border-radius: 1%;
+}
+.box3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.box3 .links {
+  font-size: medium;
+}
+
+.box4 .likes {
+  font-size: medium;
+}
+.box4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.refLinks {
+  color: white;
 }
