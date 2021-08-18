@@ -6,7 +6,6 @@ function pageLoad ()
 }
 function showSection (sectionIdx)
 {
-   // alert(sectionIdx);
     sections.forEach((section, idx)=>{
         if (sectionIdx===idx)
         {
@@ -19,23 +18,10 @@ function showSection (sectionIdx)
 }
 function contactMe(frm)
 {
-    
-
     const data ={
         yourName: frm.yourName.value,
         yourEmail: frm.yourEmail.value
     }
     alert("Send this to server: " +JSON.stringify(data));
-
     return false;
-/*
-    fetch ("http://localhost:5000/api/contact",
-    {
-        method:'POST',
-        headers: {'Content-Type': 'application/json'},
-        data: data
-    }).then ((resp)=>{
-
-    })
-    */
 }
