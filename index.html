@@ -264,12 +264,21 @@
     </div>
    
     <div id='divContactMe'>
-        <h1>Contact Me:</h1>
-        <form onSubmit='return contactMe(this)'>
-            <p><input type='text' id='yourName' required minlength="2"/></p>
-            <p><input type='email' id='yourEmail' required/></p>
-            <p><button>Submit</button></p>
-        </form>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="content">
+            <form onSubmit='return contactMe(this)'>
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <p>Name:</p>
+                    <p><input type='text' id='yourName' required minlength="2"/></p>
+                    <p>Email:</p>
+                    <p><input type='email' id='yourEmail' required/></p>
+                    <p><button>Submit</button></p>
+                </fieldset>
+            </form>
+        </div>
     </div>
 </body>
 
