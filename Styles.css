@@ -44,7 +44,7 @@ nav li {
   position: relative;
 }
 
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 780px) {
   .logo {
     display: none;
   }
@@ -74,6 +74,8 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+
+/* Below is code used not for nav */
 
 .rows {
   display: flex;
@@ -141,7 +143,7 @@ nav a:hover::before {
   animation-duration: 5s;
 }
 
-.contentAboutMe {
+/*.contentAboutMe {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0.25em;
   box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
@@ -152,9 +154,70 @@ nav a:hover::before {
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 80%;
   width: 80%;
-  margin-top: 3.5%;
+  margin: 0 auto;
+}*/
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+/*.contentProjects {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}*/
+
+.resume {
+  display: flex;
+  flex: 25%;
+  padding: 0 4px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.itemEd {
+  text-align: left;
+  width: 25%;
+}
+
+.itemEx {
+  text-align: left;
+  width: 65%;
+}
+
+@media screen and (min-width: 100px) and (max-width: 784px) {
+  .itemEd {
+    flex: 55%;
+    max-width: 100%;
+  }
+  .itemEx {
+    flex: 55%;
+    max-width: 100%;
+  }
 }
 
 @keyframes slide {
@@ -173,13 +236,12 @@ nav a:hover::before {
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1.75fr;
   grid-template-rows: 1fr 1fr;
-  background-color: white;
+  /* background-color: white; */
   color: #444;
 }
 
 .box {
-  background-color: #444;
-  color: #fff;
+  color: black;
   border-radius: 5px;
   padding: 20px;
   font-size: 150%;
@@ -206,9 +268,11 @@ nav a:hover::before {
 .box3 {
   grid-column: 1;
   grid-row: 2;
+  color: #444;
 }
 .box3 .links {
   font-size: medium;
+  color: #444;
 }
 
 .box4 .likes {
@@ -220,5 +284,34 @@ nav a:hover::before {
 }
 
 .refLinks {
-  color: white;
+  color: #444;
+}
+
+.content .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  flex-shrink: 0.5;
+}
+
+.project-container {
+  height: 450px;
+  width: 275px;
+  background-color: beige;
+}
+
+.project1 {
+  background-image: url('photos/pi.jpg');
+}
+
+.project1:hover {
+  opacity: 0.2;
+}
+.project2:hover {
+  opacity: 0.2;
+}
+
+.project2 {
+  background-image: url('photos/DP.png');
 }
