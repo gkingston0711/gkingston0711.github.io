@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="Styles.css?v=2">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,74 +11,73 @@
 </head>
 <body onload='pageLoad()'>
     <header>
-        <div class="container" id='divNavbar' alt="navbar">
+        <div class="container" id='divNavbar'>
             <img src="photos/Nav_Logo.png" alt="JKLogo" class="logo"> 
                 <nav>
                     <ul>
                         <li>
-                            <a class ="nav-link" href = "javascript:showSection(1)" alt="aboutme">About Me</a>
+                            <a class ="nav-link" href = "javascript:showSection(1)">About Me</a>
                         </li>
                         <li>
-                            <a class ="nav-link" href = "javascript:showSection(2)" alt="resume">Resume</a>
+                            <a class ="nav-link" href = "javascript:showSection(2)" >Resume</a>
                         </li>
                         <li>
-                            <a class ="nav-link" href = "javascript:showSection(3)" alt="projects">Projects</a>
+                            <a class ="nav-link" href = "javascript:showSection(3)" >Projects</a>
                         </li>
                         <li>
-                            <a class ="nav-link" href = "javascript:showSection(4)" alt="contactme">Contact Me</a>
+                            <a class ="nav-link" href = "javascript:showSection(4)" >Contact Me</a>
                         </li>
                         <li>
-                            <a class ="nav-link" href = "javascript:showSection(0)" alt="home">Home</a>
+                            <a class ="nav-link" href = "javascript:showSection(0)" >Home</a>
                         </li>
                     </ul>
                 </nav>
         </div>
     </header>
 
-    <div id='divPrevWork' id="prework" alt="prework">
-        <div class="bg" alt="bg"></div>
-        <div class="bg bg2" alt="bg2"></div>
-        <div class="bg bg3" alt="bg3"></div>
-        <div class="content" alt="content">
-            <div class="resume" alt="resume">
-            <div class="itemEd" alt="itemEd">
-                <h1>Education</h1>
-                <p>Portland State University</p>
-                <p>Masters Computer Science-Networks and Systems</p>
-                <p>2018-2021 December, GPA: 3.95</p>
-                </br>
-                <p>University of Utah</p>
-                <p>Bachelors Economics-Minor:Buisness</p>
-                <p>2011-2015</p>
-            </div>
+    <div id='divPrevWork'>
+        <div class="bg" ></div>
+        <div class="bg bg2" ></div>
+        <div class="bg bg3" ></div>
+        <div class="content" >
+            <div class="resume" >
+                <div class="itemEd" >
+                    <h1>Education</h1>
+                    <p>Portland State University</p>
+                    <p>Masters Computer Science-Networks and Systems</p>
+                    <p>2018-2021 December, GPA: 3.95</p>
+                    <br>
+                    <p>University of Utah</p>
+                    <p>Bachelors Economics-Minor:Buisness</p>
+                    <p>2011-2015</p>
+                </div>
             
-            <div class = "itemEx" alt="itemEx">         
-                <h1>Experiance</h1>
-                <p>Portland State Aerospace Society - Sep 2020-Current - Volunteer Software Member</p>
-                <p>Write unit and integration test code in Python to test the exposure accuracy of 
-                Cirrus Flux camera.</p>
-                <p>Use TDD to Work with Cirrus Flux camera team to design algorithms for embedded 
-                software to read data from an image and determine satellite orientation.</p>
-                </br>
-                <p>Hawaii Pacific Health - Jun 2016-Feb 2018 - Data Specialist </p>
-                <p>Edited TOAD software, Access, and excel to ensure up to date monthly reports</p>
-                <p>Led bi-weekly analytics team meeting where each member discussed their data driven 
-                    findings from their projects that week, issues they may have had, then group 
-                    collaborated to find best resolution</p>
-                <p>
+                <div class = "itemEx" >         
+                    <h1>Experiance</h1>
+                    <p>Portland State Aerospace Society - Sep 2020-Current - Volunteer Software Member</p>
+                    <p>Write unit and integration test code in Python to test the exposure accuracy of 
+                    Cirrus Flux camera.</p>
+                    <p>Use TDD to Work with Cirrus Flux camera team to design algorithms for embedded 
+                    software to read data from an image and determine satellite orientation.</p>
+                    <br>
+                    <p>Hawaii Pacific Health - Jun 2016-Feb 2018 - Data Specialist </p>
+                    <p>Edited TOAD software, Access, and excel to ensure up to date monthly reports</p>
+                    <p>Led bi-weekly analytics team meeting where each member discussed their data driven 
+                        findings from their projects that week, issues they may have had, then group 
+                        collaborated to find best resolution</p>
+                    <p>
                     Led state wide meeting to develop data management plans, reports, validation procedures.
-                </p>         
+                    </p>         
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div id='divProjects'>
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
-        <div class="content flex-container">
-
+        <div id="divImages" class=" contentProjects flex-container">
             <div class="project-container project1">
                <img class="image__img1" src="photos/pi2.png" alt="rasppi">
                <div class="image_overlay1">
@@ -90,7 +89,7 @@
                         track of the users average, and if the temp becomes to high or to low and email is sent with all
                         the recorded data.
                     </p>
-                    <a class ="GitTYSys" href = "https://github.com/gkingston0711/TMSys" alt="TM">Github: TMSys</a>
+                    <a class ="GitTYSys" href = "https://github.com/gkingston0711/TMSys" >Github: TMSys</a>
                </div>
             </div>
 
@@ -107,7 +106,7 @@
                         below you will see multiple folders,
                         each titled a different design pattern concept. 
                     </p>
-                    <a class ="GitDP" href = "https://github.com/gkingston0711/Design_Patterns" alt="DP">Github :Design Patterns</a>
+                    <a class ="GitDP" href = "https://github.com/gkingston0711/Design_Patterns" >Github :Design Patterns</a>
                </div>
             </div>
         </div>
@@ -118,8 +117,8 @@
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
         <div class="content">
-            <div class="wrapper">
-                <div class="box box2">
+            <section class="wrapper">
+                <div class="box boxIntro">
                     <p>
                         Hello, My name is Joey and I am a gradguate student studing computer science. 
                         I will be gradgtuating December of 2021 with an emphasis is networking and 
@@ -128,11 +127,11 @@
                         I worked with different data bases, running and editing queries. 
                     </p>
                 </div>
-                <div class="box box1">
+                <div class="box boxPhoto">
                     <img src="photos/photo4.jpeg" alt="about me" class="item-1"> 
                 </div>
-                <div class="box box3">
-                    <h1 class="links">Links to my work</h1>
+                <div class="box boxLinks">
+                        <h1 class="links">Links to my work</h1>
                         <ul>
                             <li>
                                 <a class ="refLinks" href = "https://www.linkedin.com/in/joeykingston/">LinkedIn</a>
@@ -142,7 +141,7 @@
                             </li>
                         </ul>
                 </div>
-                <div class="box box4">
+                <div class="box boxInterest">
                     <h1 class="likes">Personal Interest</h1>
                         <ul>
                             <li>Astronomy</li>
@@ -152,7 +151,7 @@
                             <li>Beach trips</li>
                         </ul>
                 </div>
-            </div>
+            </section>
         </div>
         </div>
 
@@ -243,12 +242,12 @@
         <div class="bg"></div>
         <div class="bg bg2"></div>
         <div class="bg bg3"></div>
-        <div class="content">
+        <div class="content1">
             <form onSubmit='return contactMe(this)'>
                 <fieldset>
                     <legend>Contact Form</legend>
                     <label for="name">Name</label>
-                    <p><input type='text' name="name" id="name" required minlength="2" alt="yourname"/></p>
+                    <p><input type='text' name="name" id="name" required minlength="2"/></p>
                     <label for="email">Email</label>
                     <p><input type='email' name="email" id="email" required /></p>
                     <p><button>Submit</button></p>
